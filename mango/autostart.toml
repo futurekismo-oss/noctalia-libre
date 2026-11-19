@@ -1,0 +1,8 @@
+[global]
+exec_once = [
+    "wl-paste --type text --watch cliphist store",
+    "wl-paste --type image --watch cliphist store",
+    "foot --server",
+    "noctalia",
+    "gsr-ui launch-daemon"
+]

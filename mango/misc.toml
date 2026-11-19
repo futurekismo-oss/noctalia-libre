@@ -1,0 +1,5 @@
+[global]
+warp_cursor = 1
+sloppy_focus = 1
+cursor_hide_timeout = 60
+cursor_hide_on_keypress = 1

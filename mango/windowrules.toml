@@ -1,0 +1,12 @@
+[[rule.window_rule]]
+is_term = 1
+app_id = "foot"
+
+[[rule.window_rule]]
+is_term = 1
+app_id = "alacritty"
+
+# btop opens directly on the special workspace overlay
+[[rule.window_rule]]
+tags = 0
+app_id = "btop"

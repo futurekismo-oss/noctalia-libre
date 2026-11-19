@@ -1,0 +1,18 @@
+# Mango window manager — main configuration
+
+[global]
+auto_reload_config = 1
+
+# Keep the config split by concern. Only .toml files are sourced.
+source = [
+    "~/.config/mango/environment.toml",
+    "~/.config/mango/appearance.toml",
+    "~/.config/mango/effects.toml",
+    "~/.config/mango/animations.toml",
+    "~/.config/mango/scroller.toml",
+    "~/.config/mango/input.toml",
+    "~/.config/mango/misc.toml",
+    "~/.config/mango/autostart.toml",
+    "~/.config/mango/windowrules.toml",
+    "~/.config/mango/keybinds.toml",
+]

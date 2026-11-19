@@ -1,0 +1,105 @@
+[bind.default]
+# Terminal and launchers
+"SUPER+Return" = "spawn,footclient"
+"SUPER+space" = "spawn,noctalia msg panel-toggle launcher"
+"SUPER+s" = "spawn,noctalia msg panel-toggle control-center"
+"SUPER+comma" = "spawn,noctalia msg settings-toggle"
+"SUPER+d" = "spawn,goofcord"
+"SUPER+b" = "spawn,zen-beta"
+"SUPER+e" = "spawn,nemo"
+"SUPER+Slash" = "spawn,skwd-wall-v2"
+
+# Session and windows
+"SUPER+r" = "reload_config"
+"SUPER+SHIFT+Escape" = "quit"
+"SUPER+q" = "killclient"
+"SUPER+Delete" = "spawn,noctalia msg panel-toggle session"
+"SUPER+ALT+l" = "spawn,noctalia msg session lock"
+"SUPER+Escape" = "spawn,footclient --app-id btop -e btop"
+"SUPER+SHIFT+e" = "spawn,noctalia msg desktop-widgets-toggle-edit"
+
+# Screenshots and utilities
+"Print" = "spawn,noctalia msg screenshot-region"
+"SHIFT+Print" = "spawn,hyprshot -m region --clipboard-only"
+"SUPER+c" = "spawn,hyprpicker -a"
+"SUPER+v" = "spawn,noctalia msg panel-toggle clipboard"
+
+# Tags
+"SUPER+1" = "comboview,1"
+"SUPER+2" = "comboview,2"
+"SUPER+3" = "comboview,3"
+"SUPER+4" = "comboview,4"
+"SUPER+5" = "comboview,5"
+"SUPER+6" = "comboview,6"
+"SUPER+7" = "comboview,7"
+"SUPER+8" = "comboview,8"
+"SUPER+9" = "comboview,9"
+"SUPER+0" = "toggleoverview"
+
+"SUPER+ALT+1" = "tag,1"
+"SUPER+ALT+2" = "tag,2"
+"SUPER+ALT+3" = "tag,3"
+"SUPER+ALT+4" = "tag,4"
+"SUPER+ALT+5" = "tag,5"
+"SUPER+ALT+6" = "tag,6"
+"SUPER+ALT+7" = "tag,7"
+"SUPER+ALT+8" = "tag,8"
+"SUPER+ALT+9" = "tag,9"
+
+"SUPER+SHIFT+s" = "toggle_special_tag"
+
+# Layouts
+"SUPER+t" = "setlayout,tile"
+"SUPER+x" = "setlayout,scroller"
+"SUPER+a" = "switch_layout"
+"SUPER+SHIFT+a" = "spawn,noctalia msg panel-toggle ezequiel/mango_layouts:panel"
+"SUPER+i" = "incnmaster,+1"
+"SUPER+p" = "incnmaster,-1"
+"SUPER+n" = "togglegaps"
+
+# Window state
+"SUPER+f" = "togglefullscreen"
+"SUPER+ALT+Space" = "togglefloating"
+"SUPER+ALT+i" = "minimized"
+"SUPER+SHIFT+i" = "restore_minimized"
+"ALT+z" = "toggle_scratchpad"
+"Caps_Lock" = "spawn,swayosd-client --caps-lock"
+
+# Focus
+"SUPER+j" = "focusstack,next"
+"SUPER+k" = "focusstack,prev"
+"SUPER+h" = "focusdir,left"
+"SUPER+l" = "focusdir,right"
+"ALT+Tab" = "toggleoverview"
+
+# Swap windows
+"SUPER+SHIFT+k" = "exchange_client,up"
+"SUPER+SHIFT+j" = "exchange_client,down"
+"SUPER+SHIFT+h" = "exchange_client,left"
+"SUPER+SHIFT+l" = "exchange_client,right"
+
+# Hardware keys
+"XF86MonBrightnessUp" = "spawn,noctalia msg brightness-up"
+"XF86MonBrightnessDown" = "spawn,noctalia msg brightness-down"
+"XF86AudioRaiseVolume" = "spawn_shell,pamixer -u && pamixer -i 5"
+"XF86AudioLowerVolume" = "spawn_shell,pamixer -u && pamixer -d 5"
+"XF86AudioMute" = "spawn,noctalia msg volume-mute"
+
+[mousebind.default]
+"SUPER+btn_left" = "moveresize,curmove"
+"SUPER+btn_right" = "moveresize,curresize"
+
+[gesturebind.default]
+"none+left+3" = "focusdir,left"
+"none+right+3" = "focusdir,right"
+"none+up+3" = "focusdir,up"
+"none+down+3" = "focusdir,down"
+"none+left+4" = "viewtoleft_have_client"
+"none+right+4" = "viewtoright_have_client"
+"none+up+4" = "toggleoverview"
+"none+down+4" = "toggleoverview"
+
+# Every tag uses the tile layout by default
+[[rule.tag_rule]]
+id = "*"
+layout_name = "tile"

@@ -1,0 +1,45 @@
+# --- CRT Green Theme for Helix ---
+
+"ui.background" = { bg = "background" }
+"ui.text" = { fg = "foreground" }
+"ui.text.focus" = { fg = "bright_green", modifiers = ["bold"] }
+"ui.linenr" = { fg = "dark_gray" }
+"ui.linenr.selected" = { fg = "foreground", modifiers = ["bold"] }
+"ui.cursor" = { fg = "cursor_text", bg = "cursor" }
+"ui.cursor.primary" = { fg = "cursor_text", bg = "cursor" }
+"ui.cursor.match" = { fg = "background", bg = "bright_green" }
+"ui.selection" = { bg = "selection_bg", fg = "selection_fg" }
+"ui.statusline" = { fg = "foreground", bg = "dark_bg" }
+"ui.statusline.inactive" = { fg = "dark_gray", bg = "background" }
+"ui.popup" = { bg = "dark_bg", fg = "foreground" }
+"ui.window" = { fg = "border_inactive" }
+
+# Syntax Highlighting
+comment = { fg = "dark_gray", modifiers = ["italic"] }
+string = { fg = "pale_green" }
+constant = { fg = "bright_yellow" }
+number = { fg = "bright_yellow" }
+keyword = { fg = "vibrant_green", modifiers = ["bold"] }
+function = { fg = "bright_cyan" }
+type = { fg = "bright_teal" }
+variable = { fg = "foreground" }
+namespace = { fg = "muted_green" }
+operator = { fg = "vibrant_green" }
+
+[palette]
+background     = "#000800"
+dark_bg        = "#001100"
+foreground     = "#00ff04"
+selection_bg   = "#182516"
+selection_fg   = "#D8FFA3"
+cursor         = "#00ff00"
+cursor_text    = "#005200"
+border_inactive= "#152114"
+dark_gray      = "#25331F"
+muted_green    = "#5D8A52"
+vibrant_green  = "#74B83D"
+pale_green     = "#88ff88"
+bright_green   = "#00ff04"
+bright_yellow  = "#C6FF79"
+bright_teal    = "#C4F9A0"
+bright_cyan    = "#33ffcc"
